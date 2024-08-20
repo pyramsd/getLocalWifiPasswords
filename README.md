@@ -22,5 +22,5 @@ chmod +x getLocalWifiPasswords.sh
 
 ## Uso
 ```bash
-sudo ./getLocalWifiPassowords.sh
+sudo ./getLocalWifiPasswords.sh
 ```
