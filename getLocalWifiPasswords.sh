@@ -5,8 +5,7 @@ if [ $EUID -ne 0 ]; then
         exit 1
 fi
 
-output="SSID\tPSK"
-
+output="SSID\tPSK\n----\t---"-
 for file in /etc/NetworkManager/system-connections/*; do
     if [ -f "$file" ]; then
         id=$(grep '^id=' "$file" | cut -d '=' -f 2 | tr -d ' ')
