@@ -2,6 +2,7 @@
 
 if [ $EUID -ne 0 ]; then
         echo "Pemission denied"
+        echo "Run: sudo ./getLocalWifiPasswords.sh"
         exit 1
 fi
 
